@@ -1,0 +1,24 @@
+:root{
+    --color-dark-black: #10100e;
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    
+    --color-yellow: #ffff00;
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+    
+    --radius-small: 3px;
+    --radius-medium: 6px;
+
+    --font-size-header: 26px;
+}
+
+
+html, body{
+    background-color: var(--color-dark-black);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
