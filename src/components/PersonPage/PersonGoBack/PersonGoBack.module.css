@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+
+    margin-top: 15px;
+}
+.arrow{
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-bottom: 3px solid var(--color-yellow);
+    border-left: 3px solid var(--color-yellow);
+    transform: rotate(45deg);
+}
+.link{
+    display: inline-flex;
+
+    color: var(--color-yellow);
+    font-weight: var(--font-bold);
+    padding: var(--spacing-small) 0px;
+}

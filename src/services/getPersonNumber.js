@@ -1,4 +1,11 @@
-import { SWAPI_PEOPLE_URL, HTTP, SWAPI_SUM_PEOPLE_URL, GUIDE_IMG_EXTENSION,URL_AVATAR_PERSON} from "../constants/api";
+import { SWAPI_PEOPLE_URL, HTTP,HTTPS, SWAPI_SUM_PEOPLE_URL, GUIDE_IMG_EXTENSION,URL_AVATAR_PERSON, SWAPI_PARAM_PAGE} from "@constants/api";
+
+export const getPeoplePageId = url => {
+    const position = url.lastIndexOf(SWAPI_PARAM_PAGE);
+    const id = url.slice(position + SWAPI_PARAM_PAGE.length, url.length);
+
+    return Number(id);
+}
 
 const getID = (url, category) => {
     const id = parseInt(url.replace(/[^\d]/g, ''))

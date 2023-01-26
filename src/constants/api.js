@@ -3,7 +3,10 @@ export const HTTP = 'https://'
 
 export const SWAPI_MAIN_URL = 'swapi.dev/api/';
 export const SWAPI_PEOPLE_URL = 'people';
-export const SWAPI_SUM_PEOPLE_URL = HTTPS+ SWAPI_MAIN_URL + SWAPI_PEOPLE_URL;
+export const SWAPI_PARAM_PAGE = '/?page=';
+
+export const SWAPI_SUM_PEOPLE_URL = HTTPS+ SWAPI_MAIN_URL + SWAPI_PEOPLE_URL + SWAPI_PARAM_PAGE;
+export const SWAPI_SUM_PERSON_URL = HTTPS+ SWAPI_MAIN_URL + SWAPI_PEOPLE_URL;
 
 export const GUIDE_MAIN_IMG_URL ='https://starwars-visualguide.com/assets/img/';
 export const GUIDE_PERSON_URL = 'characters';

@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-large);
+}
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav__list a{
+    display: block;
+    margin: 0 var(--spacing-small);
+    padding: 7px var(--spacing-small);
+    border: 2px solid transparent;
+    border-radius: var(--radius-small);
+
+    min-width: 70px;
+    
+    text-align: center;
+    color: var(--color-white);
+    font-weight: var(--font-bold);
+    text-shadow: var(--text-shadow-yellow);
+
+    transition: 0.1s;
+}
+.nav__list :global(a.active){
+    border: 2px solid var(--color-violet);
+    color: var(--color-violet);
+    text-shadow: none;
+}

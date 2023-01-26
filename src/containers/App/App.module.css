@@ -1,6 +1,10 @@
-.title{
-    color: red;
+.container{
+    margin: auto;
+    max-width: var(--max-width);
+    padding: var(--spacing-large) var(--spacing-small);
 }
-.text{
-    text-decoration: underline;
+
+
+@media screen and (max-width: 1000px){
+
 }
